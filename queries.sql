@@ -9,41 +9,7 @@ select name, escape_attempts from animals where weight_kg > 10.5;
  select name from animals where neutered = '1';
  select name from animals where name not like 'Gabumon';
   select name from animals where weight_kg between 10.4 and 17.3;
-  
-insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg)
- values('Charmander','2020-02-08','0',0,11);
-
- insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg)
- values('Plantmon','2021-11-15','1',2,5.7);
-
  
-insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg)
- values('Squirtle','1993-09-02','0',3,12.13);
-
- insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg)
- values('Angemon','2005-06-12','1',1,45);
-
-insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg) 
-values('Boarmon','2005-06-07','1',7,20.4);
-
-
-insert into animals 
-(name,date_of_birth,neutered,escape_attempts,weight_kg) 
-values('Blossom','1998-10-13','1',3,17);
-
-
-
-
-
- insert into animals
- (name,date_of_birth,neutered,escape_attempts,weight_kg)
- values('Ditto','2022-05-14','1',4,22);
-
 
 BEGIN;
 UPDATE animals SET species = 'unspecified';
