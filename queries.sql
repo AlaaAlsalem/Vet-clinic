@@ -140,7 +140,7 @@ SELECT A.name FROM vets VE
     LEFT JOIN animals A
     ON VI.animal_id = A.id
     WHERE VE.name = 'Maisy Smith'
-    ORDER BY VI.date DESC
+    ORDER BY VI.date ASC
     LIMIT 1;
 
 SELECT * FROM animals A
