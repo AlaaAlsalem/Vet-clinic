@@ -3,7 +3,7 @@
 SELECT * from animals WHERE name = 'Luna';
 select * from animals where name like '%mon%';
 select name from animals where date_of_birth between '2016-01-01' and '2019-01-01';
-select * from animals where neutered ='1' and escape_attempts < 3;
+select * from animals where neutered ='1' and escape_attempts <3;
 select date_of_birth from animals where name like 'Agumon' or name like 'Pikachu';
 select name, escape_attempts from animals where weight_kg > 10.5;
  select name from animals where neutered = '1';
@@ -51,3 +51,4 @@ SELECT AVG(weight_kg) FROM animals;
 SELECT neutered, SUM(escape_attempts) FROM animals GROUP BY neutered;
 SELECT species, MIN(weight_kg) AS min_weight_kg, MAX(weight_kg) AS max_weight_kg  FROM animals GROUP BY species;
 SELECT species, AVG(escape_attempts) AS avg_escape_attempts  FROM animals WHERE date_of_birth >= '1990-01-01' AND date_of_birth <= '2000-12-31' GROUP BY species;
+
