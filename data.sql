@@ -43,3 +43,10 @@ values('Blossom','1998-10-13','1',3,17);git
  insert into animals
  (name,date_of_birth,neutered,escape_attempts,weight_kg)
  values('Ditto','2022-05-14','1',4,22);
+
+ INSERT INTO owners (full_name, age) VALUES('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES('Jennifier Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES('Jodie Whittaker', 38);
