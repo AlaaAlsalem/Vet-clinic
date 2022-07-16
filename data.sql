@@ -43,3 +43,45 @@ values('Blossom','1998-10-13','1',3,17);git
  insert into animals
  (name,date_of_birth,neutered,escape_attempts,weight_kg)
  values('Ditto','2022-05-14','1',4,22);
+
+ INSERT INTO owners (full_name, age) VALUES('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES('Jennifier Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES('Jodie Whittaker', 38);
+
+
+INSERT INTO species (name) VALUES('Pokemon');
+INSERT INTO species (name) VALUES('Digimon');
+
+
+
+UPDATE animals 
+SET species_id = 1
+WHERE name LIKE '%mon';
+
+UPDATE animals
+SET species_id = 2
+WHERE name NOT LIKE '%mon';
+
+UPDATE animals 
+SET owner_id = 1
+WHERE name = 'Agumon';
+
+UPDATE animals 
+SET owner_id = 2
+WHERE name = 'Gabumon' OR name = 'Pikachu';
+
+UPDATE animals 
+SET owner_id = 3
+WHERE name = 'Devimon' OR name = 'Plantmon';
+
+UPDATE animals 
+SET owner_id = 4
+WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+
+UPDATE animals 
+SET owner_id = 5
+WHERE name = 'Angemon' OR name = 'Boarmon';
+
